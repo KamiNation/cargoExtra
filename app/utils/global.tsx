@@ -72,12 +72,12 @@ export const portfolioProjectMap: experiencemap[] = [
     {
         icon: <BiRotateRight />,
         title: "Zero Inventory Charge",
-        desc: "Where other shippers charge unnecessary high inventory fee another hidden charges that subsequently leads to high shipping cost. CargoExtra offers FREE Inventory charge and not hidden charges.",
+        desc: "Where other shippers charge unnecessary high inventory fee another hidden charges that subsequently leads to high shipping cost. GiddsField offers FREE Inventory charge and not hidden charges.",
     },
     {
         icon: <BiRotateRight />,
         title: "Free insurance",
-        desc: "The best part about CargoExtra is that we offer free insurance on all the goods you need to be shipped.",
+        desc: "The best part about GiddsField is that we offer free insurance on all the goods you need to be shipped.",
     },
     {
         icon: <BiRotateRight />,
@@ -92,7 +92,7 @@ export const portfolioProjectMap: experiencemap[] = [
     {
         icon: <BiRotateRight />,
         title: "15 Days Free Storage",
-        desc: "Where other shippers offers less than 10 days, CargoExtra gives up to 15 Days FREE storage to give you ample time to shop more from multiple store and also be able to ship to Nigeria as one shipment with just one shipping cost.",
+        desc: "Where other shippers offers less than 10 days, GiddsField gives up to 15 Days FREE storage to give you ample time to shop more from multiple store and also be able to ship to Nigeria as one shipment with just one shipping cost.",
     },
     {
         icon: <BiRotateRight />,
@@ -145,7 +145,7 @@ export const portfolioContactMap: contactmap[] = [
                 Tell: "Tell 1: +234 700 010 0400",
                 Tell2: "Tell 2: +234 810 737 7307",
                 Tell3: "Tell 3: +234 810 737 7716",
-                Email: "Email: info@cargoextra.com",
+                Email: "Email: info@GiddsField.com",
             },
         
     },

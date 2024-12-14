@@ -52,7 +52,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
 
     return (
         <>
-            <div className='hidden xl:flex 2xl:flex'>
+            <div className='hidden xl:flex 2xl:flex border border-solid border-green-800'>
 
                 {
                     navItemsData && navItemsData.map((navElement, index) => (

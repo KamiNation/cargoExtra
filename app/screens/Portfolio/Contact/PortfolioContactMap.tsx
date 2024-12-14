@@ -10,7 +10,7 @@ const PortfolioContactMap: React.FC<contactMap> = ({ whatsapp }) => {
 
 
     return (
-        <>
+        <div>
             {
                 portfolioContactMap.map((contact: contactmap, index) => (
                     <PortfolioContactCard key={index}
@@ -28,7 +28,7 @@ const PortfolioContactMap: React.FC<contactMap> = ({ whatsapp }) => {
                         />
                 ))
             }
-        </>
+        </div>
 
     )
 }

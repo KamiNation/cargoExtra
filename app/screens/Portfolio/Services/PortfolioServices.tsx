@@ -9,22 +9,22 @@ const PortfolioServices = () => {
     return (
         <section id='services' className='w-full min-h-screen mt-4 text-black dark:text-teal-600 relative p-2.5'>
 
-            <h1 className="text-center text-primary font-bold text-4xl mb-4 sm:text-base">Our Services</h1>
+            <h1 className="text-center text-primary font-bold text-4xl mb-4 sm:text-base md:text-lg lg:text-xl xl:text-2xl">Our Services</h1>
 
             <div className="flex flex-wrap mb-32">
                 {/* <div className="gap-10 mb-8 mt-8 flex sm:flex-col md:flex-col flex-wrap"> */}
-                <div className="flex-col gap-4">
+                <div className="flex-col gap-4 ">
 
-                    <div className=" grid grid-cols-2 grid-rows-1 sm:flex sm:flex-col" >
+                    <div className=" grid grid-cols-2 grid-rows-1 sm:flex sm:flex-col md:flex md:flex-col" >
 
                         {/* <div className='flex flex-wrap flex-row gap-10 justify-around mt-4'> */}
                         <div className='flex flex-1 '>
                             <Image alt='services' width={150} height={150} src={air} className=" w-[100%] h-[100%]" />
                         </div>
 
-                        <div className='flex flex-col flex-1 justify-center p-12 gap-14 sm:gap-2'>
+                        <div className='flex flex-col flex-1 justify-center p-12 gap-14 sm:gap-2 md:gap-2 lg:gap-2 xl:gap-2'>
 
-                            <span className='text-primary font-bold  text-4xl sm:text-base'>
+                            <span className='text-primary font-bold  text-4xl sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
                                 Air Freight
                             </span>
 
@@ -35,9 +35,9 @@ const PortfolioServices = () => {
 
                     </div>
 
-                    <div className='grid grid-cols-2 grid-rows-1 sm:flex sm:flex-col'>
-                        <div className='flex flex-col flex-1 p-12 gap-14 sm:gap-2'>
-                            <span className='text-primary font-bold  text-4xl sm:text-base'>
+                    <div className='grid grid-cols-2 grid-rows-1 sm:flex sm:flex-col md:flex md:flex-col'>
+                        <div className='flex flex-col flex-1 p-12 gap-14 sm:gap-2 md:gap-2 lg:gap-2 xl:gap-2'>
+                            <span className='text-primary font-bold  text-4xl sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
                                 Shop For Me
                             </span>
 
@@ -58,10 +58,10 @@ const PortfolioServices = () => {
             <div>
 
                 <div className='mb-8'>
-                    <div className='text-primary font-bold mb-2 text-xl sm:text-base sm:text-center sm:p-2'>
+                    <div className='text-primary font-bold mb-2 text-xl sm:text-base sm:text-center sm:p-2 md:text-lg md:text-center lg:text-xl lg:text-center xl:text-2xl xl:text-center '>
                         Get Your Cargo Shipped to your doorstep in Nigeria in the Safest Way Possible!
                     </div>
-                    <div className='text-gray-700 flex flex-col gap-4 sm:p-4 sm:text-sm'>
+                    <div className='text-gray-700 text-justify flex flex-col gap-4 sm:p-4 md:p-2 lg:p-2 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                         <p>
                             Shipping from USA to Nigeria is a surprisingly complex process. It can be difficult to keep track of all the different regulations and requirements for shipping internationally, especially air shipping to Nigeria from the USA. This is why many people to turn to international logistics companies for help. That's where GiddsField come in!
                         </p>
@@ -84,11 +84,11 @@ const PortfolioServices = () => {
 
 
                 <div>
-                    <div className='text-primary font-bold mb-2 sm:text-base sm:text-center sm:p-2 text-xl'>
+                    <div className='text-primary font-bold mb-2 sm:text-base md:text-lg xl:text-xl sm:text-center md:text-center lg:text-center xl:text-center sm:p-2  text-xl'>
                         Shipping to Nigeria Can Have You Tripping, but not anymore!
                     </div>
 
-                    <div className='text-gray-700 flex flex-col gap-4 sm:p-4 sm:text-sm'>
+                    <div className='text-gray-700 text-justify flex flex-col gap-4 sm:p-4 md:p-2 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                         <div>
                             There are so many things to keep track of when you're shipping internationally, from high shipping costs, taxes to customs forms and documentation. It's easy for even the most experienced shipper to make a mistake that can cost them money or time - if they don't lose their shipment entirely!
                         </div>

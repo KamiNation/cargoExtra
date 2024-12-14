@@ -14,9 +14,9 @@ const PortfolioContact: React.FC<contactMap> = ({whatsapp}) => {
             <div className="flex justify-between  my-8 mx-auto  sm:flex-wrap md:flex-wrap ">
                 <PortfolioContactMap />
             </div>
-            <div className='flex items-center justify-center gap-2'>
-                <p className='flex justify-center items-center sm:p-2.5 text-xl sm:text-base' > &#169; Copyright {currentYear} </p>
-                <p className='flex justify-center items-center sm:hidden md:hidden text-xl' >GiddsField Global Logistics LLC. All right reserved.</p>
+            <div className='flex items-center justify-center gap-2 lg:flex-col'>
+                <p className='flex justify-center items-center sm:p-2.5 md:p-1 text-xl sm:text-base md:text-lg lg:text-xl' > &#169; Copyright {currentYear} GiddsField Global Logistics LLC.</p>
+                <p className='flex justify-center items-center sm:hidden md:hidden text-xl' > All right reserved.</p>
             </div>
         </section>
     )

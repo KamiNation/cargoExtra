@@ -15,8 +15,8 @@ const PortfolioProject = () => {
 
 
 
-            <h1 className="text-center text-4xl font-bold text-primary mb-4 sm:text-xl">Why Choose GiddsField</h1>
-            <p className="text-center text-gray-700">GiddsField is a fast-growing company that offers the best customer
+            <h1 className="text-center text-4xl font-bold text-primary mb-4 sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Why Choose GiddsField</h1>
+            <p className="pl-2 pr-2 text-gray-700 text-justify">GiddsField is a fast-growing company that offers the best customer
                 service in the industry. We have access to all major carriers, and we understand how important
                 it is for you to get your shipment on time every time. GiddsField’s team of experts will find
                 the best way for you to ship your freight internationally at an affordable price.</p>

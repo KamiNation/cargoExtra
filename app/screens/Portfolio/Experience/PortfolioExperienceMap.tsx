@@ -6,7 +6,7 @@ const PortfolioExperienceMap = () => {
         <>
 
             <div className='p-6 flex-1 rounded-[2rem] text-center text-primary  '>
-                <div className='flex p-5 gap-20 sm:flex sm:flex-col'>
+                <div className='flex p-5 gap-20 sm:flex sm:flex-col md:flex md:flex-col lg:flex-col xl:flex-col'>
 
                     {
                         portfolioExperienceSW.map((SW: experiencemap, index) => (

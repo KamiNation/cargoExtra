@@ -16,7 +16,7 @@ const PortfolioExperience = () => {
             </div>
             
             <div className="flex">
-                <div className='gap-10 mb-8 mt-8 flex sm:flex-col md:flex-col'>
+                <div className='gap-10 mb-8 mt-8 flex sm:flex-col md:flex-col lg:flex-col'>
                     <PortfolioExperienceMap />
                 </div>
             </div>
