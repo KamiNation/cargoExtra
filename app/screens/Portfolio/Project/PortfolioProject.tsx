@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-import { BiSolidArrowFromTop } from 'react-icons/bi'
-import PortfolioProjectMap from './PortfolioProjectMap'
+import PortfolioContact from '../Contact/PortfolioContact'
 
 const PortfolioProject = () => {
 
@@ -10,26 +10,44 @@ const PortfolioProject = () => {
 
 
     return (
-        <section id='project' className='w-full min-h-screen mt-4 text-black dark:text-teal-600 relative p-2.5'>
 
 
 
+        <section id="project" className="relative h-full w-full  flex flex-col">
 
-            <h1 className="text-center text-4xl font-bold text-primary mb-4 sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">Why Choose GiddsField</h1>
-            <p className="pl-2 pr-2 text-gray-700 text-justify">GiddsField is a fast-growing company that offers the best customer
-                service in the industry. We have access to all major carriers, and we understand how important
-                it is for you to get your shipment on time every time. GiddsField’s team of experts will find
-                the best way for you to ship your freight internationally at an affordable price.</p>
 
-            <div className="flex flex-wrap  ">
+            <div className="relative w-full h-screen flex justify-center items-center">
+                {/* Split Container (Using Flex) */}
+                <div className="w-full h-full flex flex-col">
+                    {/* Left Half (On Top of Right Half) */}
+                    <div className="w-full h-full bg-[#ffffff] z-10"></div>
 
-                <div className="gap-10 mb-8    flex sm:flex-col md:flex-col flex-wrap">
-
-                    <PortfolioProjectMap />
-
+                    {/* Right Half (Behind Left Half) */}
+                    <div className="w-full h-full bg-[#102136] z-0">
+                    </div>
                 </div>
+
+                {/* Center Overlay */}
+                <div className='absolute z-20'>
+                    <div className="absolute  p-4 border border-solid border-black rounded-2xl w-full h-full  bg-[url('/contactUs.jpg')] bg-cover flex justify-center items-center text-white flex-col gap-4">
+                        <div className='text-4xl font-bold'>
+                            Do you have any Question?
+                        </div>
+                        <div className='font-bold'>
+                            Feel free to contact us anytime.
+                        </div>
+
+                        <div className='border border-purple-800 rounded-xl p-4 bg-purple-600'>
+                            Contact Us
+                        </div>
+                    </div>
+                    <PortfolioContact />
+                </div>
+
             </div>
         </section>
+
+
     )
 }
 

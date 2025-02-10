@@ -4,28 +4,30 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
+
+import { BsTelephone } from "react-icons/bs"
+import { FaWhatsapp } from 'react-icons/fa6';
+import { MdOutlineMail } from "react-icons/md";
+import { IoLogoFacebook } from "react-icons/io";
+
 // third file created and imported in Header component
 
 export const navItemsData = [
     {
-        name: "Home",
+        name: "HOME",
         url: "/",
     },
     {
-        name: "About",
+        name: "ABOUT",
         url: "/about",
     },
     {
-        name: "Services",
+        name: "SERVICES",
         url: "/services",
     },
     {
-        name: "How It Works",
-        url: "/how",
-    },
-    {
-        name: "Rates & Pricing",
-        url: "/rates",
+        name: "CONTACT",
+        url: "/contact",
     },
 ];
 
@@ -52,7 +54,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
 
     return (
         <>
-            <div className='hidden xl:flex 2xl:flex border border-solid border-green-800'>
+            <div className='hidden  xl:flex 2xl:flex '>
 
                 {
                     navItemsData && navItemsData.map((navElement, index) => (
@@ -60,7 +62,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
                             <span
                                 className={
                                     `${active === navElement.url ?
-                                        `text-primary` : " text-gray-700"} text-[18px] px-4  font-[400] hover:dark:text-red-600 
+                                        `text-purple-800` : " text-gray-700"} text-[18px] xl:text-[14.2px] px-4  font-[400] hover:text-purple-600  
                     `}
 
                             >
@@ -82,7 +84,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
                                     <span
                                         className={
                                             `${active === navElement.url ?
-                                                ` text-primary` : " text-black"} text-[18px] px-4 font-Poppins font-[400] hover:dark:text-red-600 hover:text-teal-600
+                                                ` text-purple-900` : " text-gray-800"} text-[18px] px-4 font-Poppins font-[400] text-purple-900
                     `}
 
                                     >
@@ -99,3 +101,72 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
 }
 
 export default NavItems
+
+
+
+export const navSocialData = [
+    {
+        icon: <BsTelephone />,
+        url: "+23470035751981",
+    },
+    {
+        icon: <FaWhatsapp />,
+        url: "https://wa.link/x9xebz",
+    },
+    {
+        icon: <MdOutlineMail />,
+        url: "@gmail.com",
+    },
+    {
+        icon: <IoLogoFacebook />,
+        url: "facebook.com",
+    },
+];
+
+
+export const NavSocial: React.FC<Props> = ({ isMobile }) => {
+    return (
+        <>
+            <div className='hidden  xl:flex 2xl:flex '>
+
+                {
+                    navSocialData && navSocialData.map((navSocial, index) => (
+                        <Link href={`${navSocial.url}`} key={index} passHref>
+                            <span
+                                className={
+                                    `${
+                                        " flex justify-around text-black hover:text-purple-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
+            `}>
+                                {navSocial.icon}
+                            </span>
+                        </Link>
+                    ))
+                }
+
+            </div>
+
+
+            {
+                isMobile && (
+                    <div className='xl:hidden 2xl:hidden mt-5 flex flex-col  justify-center items-center'>
+                        {
+                            navItemsData && navItemsData.map((navSocial, index) => (
+                                <Link href={`${navSocial.url}`} key={index} passHref>
+                                    <span
+                                        className={
+                                            `${
+                                                " flex justify-around text-black hover:text-purple-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
+                    `}
+
+                                    >
+                                        {navSocial.name}
+                                    </span>
+                                </Link>
+                            ))
+                        }
+                    </div>
+                )
+            }
+        </>
+    )
+}

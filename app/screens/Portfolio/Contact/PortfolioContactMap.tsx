@@ -1,8 +1,6 @@
 import { contactmap, portfolioContactMap, contactMap } from '@/app/utils/global'
 import React from 'react'
 import PortfolioContactCard from './PortfolioContactCard'
-import { BiLogoWhatsapp } from 'react-icons/bi'
-import Button from '@/app/components/Button'
 
 
 const PortfolioContactMap: React.FC<contactMap> = ({ whatsapp }) => {
@@ -10,7 +8,7 @@ const PortfolioContactMap: React.FC<contactMap> = ({ whatsapp }) => {
 
 
     return (
-        <div>
+        <div className='flex '>
             {
                 portfolioContactMap.map((contact: contactmap, index) => (
                     <PortfolioContactCard key={index}
@@ -22,9 +20,6 @@ const PortfolioContactMap: React.FC<contactMap> = ({ whatsapp }) => {
                         child1={contact.child1}
                         child2={contact.child2}
                         child3={contact.child3}
-                        child4={contact.child4}
-                        child5={contact.child5}
-                        child6={contact.child6}
                         />
                 ))
             }

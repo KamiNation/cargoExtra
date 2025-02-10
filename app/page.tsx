@@ -20,7 +20,7 @@ const page = () => {
   return (
     <div>
       <Heading
-        title="GiddsField"
+        title="GiddsField Logistics- You ask, we deliver"
         description="Cargo shipping services"
         keywords="Express Cargo Services Freight Forwarding Custom Clearance Haulage Consulting"
       />

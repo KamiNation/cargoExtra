@@ -6,14 +6,17 @@ import React from 'react'
 
 
 
-const PortfolioExperienceCard: React.FC<experiencemap> = ({ icon, desc, title }) => {
+const PortfolioExperienceCard: React.FC<experiencemap> = ({ desc, title }) => {
     return (
-        <article className='  '>
-            <div className='flex  items-center justify-evenly'>
-                {/* {icon} */}
-                <h3 className='text-primary font-bold text-2xl sm:text-sm md:text-base lg:text-lg xl:text-xl'>{title}</h3>
+        <article className='flex p-4 bg-[#f3f5f9] hover:bg-white rounded-xl border border-solid hover:shadow-xl transition-shadow '>
+
+            <div className='w-[2px] h-[2px] p-8 bg-[#e5def7] border border-solid rounded-full '>
             </div>
-            <p className='text-gray-700 p-2 text-justify xl:text-center '>{desc}</p>
+
+            <div className='flex flex-col gap-4 pl-4'>
+                <h3 className='text-black flex font-bold text-base sm:text-sm md:text-base lg:text-lg xl:text-xl'>{title}</h3>
+                <p className='text-gray-700 flex text-justify xl:text-center tracking-widest'>{desc}</p>
+            </div>
         </article>
     )
 }

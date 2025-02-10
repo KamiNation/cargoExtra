@@ -6,17 +6,14 @@ import PortfolioAboutCard from './PortfolioAboutCard'
 
 const PortfolioMap = () => {
     return (
-        <div className='gap-8 mx-8 my-8 flex sm:flex-col'>
-
-
-
+        <div 
+        className='flex'
+        >
             {
                 portfolioAboutMap.map((about: aboutmap, index) => (
                     <PortfolioAboutCard key={index}
-                    skill={about.skill}
-                    desc={about.desc}
-                    year={about.year}
-                    icon={about.icon}
+                        img={about.img}
+                        title={about.title}
                     />
                 ))
             }

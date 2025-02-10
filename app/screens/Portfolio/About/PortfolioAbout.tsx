@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import {  BiSolidArrowFromTop } from 'react-icons/bi'
+import { BiSolidArrowFromTop } from 'react-icons/bi'
 import PortfolioMap from './PortfolioAboutMap'
 
 const PortfolioAbout = () => {
@@ -10,26 +10,19 @@ const PortfolioAbout = () => {
     }
 
     return (
-        <section id='about-me' className='w-full min-h-[45vh] mt-16 text-black dark:text-teal-600 relative '>
+        <section id='about-me' className='w-full h-screen mt-16 text-black dark:text-teal-600 relative flex flex-col gap-8'>
 
-            <h1 className="text-center font-bold text-primary text-4xl sm:text-base md:text-lg lg:text-xl xl:text-2xl ">Welcome to GiddsField</h1>
+            <h1 className="text-center font-bold text-black text-5xl sm:text-base md:text-lg lg:text-xl xl:text-2xl ">What we do</h1>
 
-            <div className=" flex  items-center justify-center mt-1">
 
-                <div className="justify-center flex-col ">
+            <PortfolioMap />
 
-                    <div className="text-gray-700 text-xl sm:text-xs md:text-sm lg:text-base xl:text-lg text-justify p-4">
-                        <p>
-                        GiddsField is the leading international logistics company providing fast and affordable shipping from the 
-                        USA to Nigeria without hassle. We also offer Export shipping from Nigeria to Nigeria to the USA. 
-                        Whether it’s managing your shipments from door-to-door or simply finding competitive rates for Air Shipping 
-                        from any location in the USA to anywhere in Nigeria, we have the experience to help you get there – wherever ‘there’ 
-                        may be!
-                        </p>
-                    </div>
 
-                </div>
+            <div className='flex text-center p-4 border   border-solid rounded-xl 
+                    bg-purple-600 text-white hover:bg-blue-900  max-w-[130px] max-h-[86px]'>
 
+                <div className='flex items-center justify-center '>
+                    Learn More</div>
             </div>
         </section>
 

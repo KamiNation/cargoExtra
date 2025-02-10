@@ -1,23 +1,30 @@
 import { aboutmap } from '@/app/utils/global'
 import Image from 'next/image'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 
 
 
-const PortfolioAboutCard: React.FC<aboutmap> = ({ year, skill, desc, icon }) => {
+const PortfolioAboutCard: React.FC<aboutmap> = ({ img, title }) => {
     return (
 
-        <div className="p-6 flex-1 rounded-[2rem] border border-solid text-center dark:border-green-600 border-teal-600  text-black dark:text-teal-600">
-            <div className='flex items-center justify-center'>
-                {
-                    icon
-                }
+
+        <div className="px-14 gap-4 flex flex-col flex-1 ">
+            
+            <div className='text-center text-xl font-semibold'>{title}</div>
+
+            <div className=' flex-1 flex items-center justify-center'>
+                <Image
+                    src={img}
+                    alt='frieght'
+                    width={700}
+                    height={700}
+                    className='flex-1 border rounded-3xl'
+                />
             </div>
-            <h3>{desc}</h3>
-            <p>{year} </p><br />{skill}
         </div>
     )
 }
 
 export default PortfolioAboutCard
+

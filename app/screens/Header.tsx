@@ -2,7 +2,7 @@
 import Link from "next/link" // Importing Link component for navigation
 import React, { FC, useEffect, useState } from "react" // Importing React, functional component type, and hooks
 
-import NavItems from "../components/NavItems" // Importing navigation items component
+import NavItems, { NavSocial } from "../components/NavItems" // Importing navigation items component
 import ThemeSwitcher from "../utils/ThemeSwitcher" // Importing theme switcher component
 // Created component folder
 // First file created and imported into page component
@@ -59,42 +59,42 @@ const Header = () => {
                 {/* Header container with conditional classes for sticky effect */}
 
                 <div className="w-[95%] xl:w-[92%] m-auto py-2 h-full">
-                    <div className="w-full h-[80px] flex items-center justify-between p-3" >
+                    <div className="w-full h-[80px] flex items-center justify-between  p-3 " >
                         {/* Flex container for logo and navigation items */}
 
                         <div>
                             <Link href={"/"} // Logo link
-                                className={"text-2xl font-bold sm:hidden md:hidden lg:hidden xl:hidden  text-primary "}
+                                className={"text-2xl font-bold sm:hidden md:hidden lg:hidden xl:hidden  text-black "}
                             >
-                               GiddsField
+                                GIDDSFIELD LOGISTICS
                             </Link>
 
                             <Link href={"/"} // Logo link
-                                className={"text-[25px] font-Poppins font-[500]  text-primary 2xl:hidden  "}
+                                className={"text-[25px] font-Poppins font-[500] text-black  2xl:hidden  "}
                             >
-                                GiddsField
-                                
+                                GIDDSFIELD LOGISTICS
+
                             </Link>
                         </div>
 
-                        <div className="flex items-center">
+                        <div>
                             <NavItems
                                 isMobile={false} // Rendering for desktop
                             />
+                            {/* <ThemeSwitcher /> Theme switcher button */}
+                        </div>
 
-                            <ThemeSwitcher /> {/* Theme switcher button */}
+                        <div className="">
+                            <NavSocial isMobile={false} />
+                        </div>
 
-                            {/* Mobile menu icon, only visible on smaller screens */}
-                            <div className="xl:hidden 2xl:hidden">
-                                <HiOutlineMenuAlt3
-                                    size={25}
-                                    className="cursor-pointer  text-primary"
-                                    onClick={() => setOpenSidebar(true)} // Opens sidebar on click
-                                />
-                            </div>
-
-                            {/* Conditional rendering based on user authentication */}
-
+                        {/* Mobile menu icon, only visible on smaller screens */}
+                        <div className="xl:hidden 2xl:hidden">
+                            <HiOutlineMenuAlt3
+                                size={25}
+                                className="cursor-pointer  text-primary"
+                                onClick={() => setOpenSidebar(true)} // Opens sidebar on click
+                            />
                         </div>
                     </div>
                 </div>
@@ -115,6 +115,7 @@ const Header = () => {
                             sm:flex sm:justify-between sm:flex-col   top-0 right-0">
 
                                 <NavItems isMobile={true} /> {/* Mobile navigation items */}
+                                <NavSocial isMobile={true} />
                                 <p className='flex justify-center items-center sm:p-2.5  text-black' >Copyright &#169; {currentYear} </p>
 
                             </div>
