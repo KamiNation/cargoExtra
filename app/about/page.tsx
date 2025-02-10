@@ -3,6 +3,8 @@ import About from '../screens/About/About'
 
 
 
-const page = () => { <About />}
+const page = () => {
+    return <About />
+}
 
 export default page

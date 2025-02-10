@@ -6,7 +6,7 @@ import AboutMap from "./AboutMap"
 
 const About = () => {
     return (
-        <section className='w-[100%] 800px:w-[92%] m-auto  h-full'>
+        <section className='w-[100%] 800px:w-[92%] m-auto   h-full'>
             <Header />
 
             <section id="about-hero" className="
@@ -32,7 +32,7 @@ const About = () => {
                         </div>
 
                         <div className="text-gray-800">
-                            Desh Logistics understand the value of time and its value to our customers in our fast growing global economy. Our professional and skilled staff will look after your shipment overseeing every detail at every stage of the shipment to ensure safe and timely delivery of your cargo.
+                            GiddsField Logistics understand the value of time and its value to our customers in our fast growing global economy. Our professional and skilled staff will look after your shipment overseeing every detail at every stage of the shipment to ensure safe and timely delivery of your cargo.
                         </div>
 
                         <div className="text-gray-800">
