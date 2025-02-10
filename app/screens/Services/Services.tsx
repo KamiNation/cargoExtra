@@ -8,12 +8,10 @@ const Services = () => {
             <Header />
 
             <section id="about-hero" className="
-relative w-full
-h-80
-bg-[url('/aboutPlane.jpg')] 
-bg-cover bg-center bg-no-repeat 
-flex text-white font-bold
-
+                relative w-full h-80
+                bg-[url('/aboutPlane.jpg')] 
+                bg-cover bg-center bg-no-repeat 
+                flex text-white font-bold
 ">
                 <div className='flex items-center justify-center pl-8'>
                     SERVICES
@@ -65,6 +63,34 @@ flex text-white font-bold
 
 
                     </div>
+                </div>
+            </section>
+
+            <section id="service-catalogue" className="flex h-[28rem] 
+                        bg-[url('/roofie.jpg')] 
+                        bg-cover bg-center bg-no-repeat  items-center justify-center">
+
+                <div className='flex gap-8 p-8 flex-1'>
+                    <div className='flex-1 flex items-center justify-center'>
+                        <Image src={"/catalogue.jpg"} alt='catalogue' width={800} height={800} className="w-[70%] h-[70%] border rounded-xl border-solid" />
+                    </div>
+
+                    <div className='flex flex-1 flex-col p-20 gap-8'>
+                        <div className='uppercase font-bold text-4xl text-purple-900'>
+                            catalogue
+                        </div>
+
+                        <div className='flex flex-col gap-8'>
+                            <div className='font-bold text-black text-xl'>
+                                Get a copy of our Catalogue here
+                            </div>
+
+                            <div className='uppercase bg-blue-900 flex items-center justify-center p-4  max-w-[130px] max-h-12 text-white hover:bg-purple-900 border rounded-xl border-solid'>
+                                download
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </section>
