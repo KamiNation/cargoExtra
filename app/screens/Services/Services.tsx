@@ -121,7 +121,7 @@ const Services = () => {
                             </div>
 
                             <div className='text-black' >
-                                Desh logistics has the capacity, as and when required, to relabel a consignment prior to its onward transfer.
+                                GiddsField logistics has the capacity, as and when required, to relabel a consignment prior to its onward transfer.
                             </div>
 
                             <div className='uppercase bg-blue-900 flex items-center justify-center p-4  max-w-[250px] max-h-12 text-white hover:bg-purple-900 border rounded-xl border-solid'>
