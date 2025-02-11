@@ -1,13 +1,14 @@
 import React from 'react'
 import Header from '../Header'
 import Image from 'next/image'
+import ServiceWareMap from './ServiceWareMap'
 
 const Services = () => {
     return (
-        <section className='w-[100%] 800px:w-[92%] m-auto  h-full'>
+        <section className='w-[100%] 800px:w-[92%] m-auto  h-full' id="services">
             <Header />
 
-            <section id="about-hero" className="
+            <section id="service-hero" className="
                 relative w-full h-80
                 bg-[url('/aboutPlane.jpg')] 
                 bg-cover bg-center bg-no-repeat 
@@ -93,6 +94,45 @@ const Services = () => {
 
                 </div>
             </section>
+
+            <section id="service-catalogue" className="flex flex-col min-h-screen p-20 gap-12">
+                <div className='flex flex-col gap-2'>
+                    <div className='text-4xl text-black font-bold text-center'>
+                        Explore Our Warehouse Services
+                    </div>
+                    <div className='text-gray-400  text-center'>
+                        Here's Comprehensive range of warehouse services we offer!
+                    </div>
+                </div>
+
+                <div className='flex flex-col gap-4'>
+                    <ServiceWareMap />
+
+                    <div className='flex flex-1 flex-row-reverse p-8'>
+
+                        <div className='flex-1 flex items-center justify-center'>
+                            <Image src={"/RELABLING.jpg"} alt='relabling' width={800} height={800} className="w-[100%] h-[100%] border rounded-xl border-solid flex-1" />
+                        </div>
+
+
+                        <div className='flex flex-1 flex-col gap-12 p-4'>
+                            <div className='uppercase text-4xl text-black font-bold'>
+                                relabling
+                            </div>
+
+                            <div className='text-black' >
+                                Desh logistics has the capacity, as and when required, to relabel a consignment prior to its onward transfer.
+                            </div>
+
+                            <div className='uppercase bg-blue-900 flex items-center justify-center p-4  max-w-[250px] max-h-12 text-white hover:bg-purple-900 border rounded-xl border-solid'>
+                                Order this Service
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </section>
     )
 }

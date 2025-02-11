@@ -17,6 +17,26 @@ export interface aboutmap {
 
 }
 
+export const wareHouseMap:experiencemap[] = [
+    {
+        title: "PACKING"
+    },
+    {
+        title: "SCREENING"
+    },
+    {
+        title: "METAL DETECTION"
+    },
+    {
+        title: "AIRCRAFT PALLET BUILDING"
+    },
+    {
+        title: "FROZEN BLAST"
+    },
+    {
+        title: "RELABLING"
+    },
+]
 
 
 
@@ -70,49 +90,6 @@ export const missionVision: experiencemap[] = [
 ]
 
 
-
-// export const portfolioProjectMap: experiencemap[] = [
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Free USA Address",
-//         desc: "We offer FREE USA and UK addresses that allows you to shop and ship what you love from the USA & UK and receive locally anywhere in Nigeria",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Zero Inventory Charge",
-//         desc: "Where other shippers charge unnecessary high inventory fee another hidden charges that subsequently leads to high shipping cost. GiddsField offers FREE Inventory charge and not hidden charges.",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Free insurance",
-//         desc: "The best part about GiddsField is that we offer free insurance on all the goods you need to be shipped.",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Free Consolidation and Packaging",
-//         desc: "Upon shipment, we offer customized packaging and consolidation services that meet industry standards.",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Transparent Lowest Shipping Cost",
-//         desc: "We value the trust of our customers, hence we offer the lowest shipping cost that covers customs duty and delivery cost to your destination.",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "15 Days Free Storage",
-//         desc: "Where other shippers offers less than 10 days, GiddsField gives up to 15 Days FREE storage to give you ample time to shop more from multiple store and also be able to ship to Nigeria as one shipment with just one shipping cost.",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Real-Time Tracking",
-//         desc: "With ExtraCargo, you are always aware of the whereabouts of your shipments. Our simple to use real-time tracking feature on our website enables you to track your delivery’s whereabouts every minute of the day!",
-//     },
-//     {
-//         icon: <BiRotateRight />,
-//         title: "Dedicated support staff",
-//         desc: "We have a seamless system that guarantees smooth transactions. Should you encounter any issue, you have our super reliable, friendly, and highly skilled professionally-trained support staff. They will work with you personally to solve your problems and address your concerns!",
-//     },
-// ]
 
 
 export interface contactmap {
