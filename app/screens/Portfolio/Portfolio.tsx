@@ -7,6 +7,7 @@ import PortfolioContact from './Contact/PortfolioContact'
 
 
 
+
 const Portfolio = () => {
     return (
         <section className='w-[100%] 800px:w-[92%] m-auto  h-full'>

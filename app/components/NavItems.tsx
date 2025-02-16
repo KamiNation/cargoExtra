@@ -62,7 +62,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
                             <span
                                 className={
                                     `${active === navElement.url ?
-                                        `text-purple-800` : " text-gray-700"} text-[18px] xl:text-[14.2px] px-4  font-[400] hover:text-purple-600  
+                                        `text-blue-900` : " text-gray-700"} text-[18px] xl:text-[14.2px] px-4  font-[400] hover:text-red-800  
                     `}
 
                             >
@@ -84,7 +84,7 @@ const NavItems: React.FC<Props> = ({ isMobile }) => {
                                     <span
                                         className={
                                             `${active === navElement.url ?
-                                                ` text-purple-900` : " text-gray-800"} text-[18px] px-4 font-Poppins font-[400] text-purple-900
+                                                ` text-blue-900` : " text-gray-800"} text-[18px] px-4 font-Poppins font-[400] hover:text-red-800
                     `}
 
                                     >
@@ -135,7 +135,7 @@ export const NavSocial: React.FC<Props> = ({ isMobile }) => {
                             <span
                                 className={
                                     `${
-                                        " flex justify-around text-black hover:text-purple-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
+                                        " flex justify-around text-black hover:text-red-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
             `}>
                                 {navSocial.icon}
                             </span>
@@ -155,7 +155,7 @@ export const NavSocial: React.FC<Props> = ({ isMobile }) => {
                                     <span
                                         className={
                                             `${
-                                                " flex justify-around text-black hover:text-purple-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
+                                                " flex justify-around text-black hover:text-red-900"} text-[18px] xl:text-[14.2px] px-4  font-[400]  
                     `}
 
                                     >

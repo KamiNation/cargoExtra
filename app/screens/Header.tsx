@@ -55,7 +55,7 @@ const Header = () => {
 
     return (
         <div className="w-full relative">
-            <div className={`${active ? "dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-black dark:to-black fixed top-0 left-0 w-full h-[80px] z-[80] border-b dark:border-[#ffffff1c] shadow-xl transition duration-500 bg-white" : "  w-full border-b dark:border-[#ffffff1c] h-[80px] z-[80] dark:shadow"} border-b-primary`}>
+            <div className={`${active ? " fixed top-0 left-0 w-full h-[80px] z-[80] border-b  shadow-xl transition duration-500 bg-white" : "  w-full border-b  h-[80px] z-[80]"} border-b-primary`}>
                 {/* Header container with conditional classes for sticky effect */}
 
                 <div className="w-[95%] xl:w-[92%] m-auto py-2 h-full">
@@ -64,13 +64,13 @@ const Header = () => {
 
                         <div>
                             <Link href={"/"} // Logo link
-                                className={"text-2xl font-bold sm:hidden md:hidden lg:hidden xl:hidden  text-black "}
+                                className={"text-2xl font-bold sm:hidden md:hidden lg:hidden xl:hidden hover:text-red-900  text-blue-900 "}
                             >
                                 GIDDSFIELD LOGISTICS
                             </Link>
 
                             <Link href={"/"} // Logo link
-                                className={"text-[25px] font-Poppins font-[500] text-black  2xl:hidden  "}
+                                className={"text-[25px] font-Poppins font-[500] text-blue-900  2xl:hidden  hover:text-red-900 "}
                             >
                                 GIDDSFIELD LOGISTICS
 
@@ -109,7 +109,7 @@ const Header = () => {
                                 onClick={handleClose} // Handle close on click outside
                                 id="screen"
                                 className="w-[45%] fixed z-[999999999]   
-                             dark:bg-black bg-white
+                              bg-white
                             flex flex-col mt-[78px] h-[86%] justify-between
                             
                             sm:flex sm:justify-between sm:flex-col   top-0 right-0">

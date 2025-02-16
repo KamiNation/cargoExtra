@@ -1,8 +1,9 @@
 import React from 'react'
+import Contact from '../screens/Contact/Contact'
 
 const page = () => {
     return (
-        <div>contact</div>
+        <Contact />
     )
 }
 

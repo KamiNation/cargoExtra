@@ -1,6 +1,7 @@
 // import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ReactElement } from "react";
 import { BiRotateRight } from "react-icons/bi";
+import { AnimatedAddressIcon, AnimatedEmailIcon, AnimatedPhoneIcon, AnimatedTimeIcon } from "../components/FramerAnimation";
 
 
 
@@ -17,7 +18,7 @@ export interface aboutmap {
 
 }
 
-export const wareHouseMap:experiencemap[] = [
+export const wareHouseMap: experiencemap[] = [
     {
         title: "PACKING"
     },
@@ -78,18 +79,51 @@ export const portfolioExperienceSW: experiencemap[] = [
 
 export const missionVision: experiencemap[] = [
     {
-                icon: <BiRotateRight />,
-                title: "Our Mission",
-                desc: "To be the clearing and forwarding company of choice in east Africa as well as provide a complete package of logistics services though our global network of partners.",
-            },
-            {
-                icon: <BiRotateRight />,
-                title: "Our Vision",
-                desc: "To offer a single-source solution to and from any point worldwide keeping our clients informed of their shipment status at every step.",
-            },
+        icon: <BiRotateRight />,
+        title: "Our Mission",
+        desc: "To be the clearing and forwarding company of choice in east Africa as well as provide a complete package of logistics services though our global network of partners.",
+    },
+    {
+        icon: <BiRotateRight />,
+        title: "Our Vision",
+        desc: "To offer a single-source solution to and from any point worldwide keeping our clients informed of their shipment status at every step.",
+    },
 ]
 
+const location1 = "Suite A2, Sahco Export Shed/Warehouse, Nahco";
+const location2 = "Cargo & Pilgrimage, Hajj Camp, MMI, Ikeja";
 
+const del1 = "Inter-State Delivery: 3-5 working days.";
+const del2 = "Int'l Delivery: 6-8 working days"
+
+
+const num1 = "+23470035751981"
+const num2 = "+2348126693296"
+
+
+
+export const contactUs: experiencemap[] = [
+    {
+        icon: <AnimatedAddressIcon />,
+        title: "Physical Address​",
+        desc: `${location1} \n ${location2}`
+    },
+    {
+        icon: <AnimatedTimeIcon />,
+        title: "Work Hours",
+        desc: `${del1} \n ${del2}`,
+    },
+    {
+        icon: <AnimatedEmailIcon />,
+        title: "Email Address",
+        desc: "contactUs@gmail.com",
+    },
+    {
+        icon: <AnimatedPhoneIcon />,
+        title: "Phone Numbers",
+        desc: `${num1} \n ${num2}`,
+    },
+]
 
 
 export interface contactmap {
