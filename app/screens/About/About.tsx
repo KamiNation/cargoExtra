@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Image from 'next/image'
 import AboutMap from "./AboutMap"
+import PortfolioContact from '../Portfolio/Contact/PortfolioContact'
 
 
 const About = () => {
@@ -27,7 +28,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 flex-1 p-8 text-black text-justify">
-                        <div className="font-bold text-3xl">
+                        <div className="font-bold text-3xl text-blue-900">
                             About Us
                         </div>
 
@@ -40,7 +41,7 @@ const About = () => {
                         </div>
 
                         <div className="flex flex-col">
-                            <div className="text-2xl text-purple-800 font-bold">
+                            <div className="text-2xl text-blue-800 font-bold">
                                 Mr. Gideon
                             </div>
 
@@ -56,8 +57,9 @@ const About = () => {
 
             <section id='about-mission' className='flex h-full'>
             <AboutMap />
-
             </section>
+
+            <PortfolioContact/>
         </section>
     )
 }

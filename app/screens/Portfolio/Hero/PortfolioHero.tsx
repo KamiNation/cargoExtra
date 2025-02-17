@@ -1,4 +1,7 @@
-import Image from 'next/image'
+
+"use client"
+
+import Link from 'next/link'
 import React from 'react'
 
 const PortfolioHero = () => {
@@ -20,8 +23,11 @@ const PortfolioHero = () => {
 
                 </div>
 
-                <span className=" bg-blue-900 p-4 rounded-xl max-w-[125px] max-h-[61px] border  border-solid hover:bg-purple-800 font-bold">
-                    Learn More
+                <span className=" bg-blue-900 p-4 rounded-xl max-w-[125px] max-h-[61px] border  border-solid hover:bg-red-500 font-bold">
+
+                    <Link href="/about">
+                        Learn More
+                    </Link>
                 </span>
 
             </div>

@@ -6,6 +6,7 @@ import ContactMap from './ContactMap'
 import ContactForm from './ContactForm'
 import OpenLayersMap from './map/Map'
 import anime from "animejs";
+import PortfolioContact from '../Portfolio/Contact/PortfolioContact'
 
 
 const Contact = () => {
@@ -105,6 +106,8 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+
+            <PortfolioContact />
 
         </section>
     )

@@ -1,6 +1,7 @@
-import Image from 'next/image'
+"use client"
 import React from 'react'
 import PortfolioContact from '../Contact/PortfolioContact'
+import Link from 'next/link'
 
 const PortfolioProject = () => {
 
@@ -14,22 +15,9 @@ const PortfolioProject = () => {
 
 
         <section id="project" className="relative h-full w-full  flex flex-col">
-
-
-            <div className="relative w-full h-screen flex justify-center items-center">
-                {/* Split Container (Using Flex) */}
-                <div className="w-full h-full flex flex-col">
-                    {/* Left Half (On Top of Right Half) */}
-                    <div className="w-full h-full bg-[#ffffff] z-10"></div>
-
-                    {/* Right Half (Behind Left Half) */}
-                    <div className="w-full h-full bg-[#102136] z-0">
-                    </div>
-                </div>
-
-                {/* Center Overlay */}
-                <div className='absolute z-20'>
-                    <div className="absolute  p-4 border border-solid border-black rounded-2xl w-full h-full  bg-[url('/contactUs.jpg')] bg-cover flex justify-center items-center text-white flex-col gap-4">
+            <div className="relative w-full h-screen flex flex-col justify-center items-center">
+                <div className=''>
+                    <div className="p-4 border border-solid border-black rounded-2xl w-[80rem] h-[25rem]  bg-[url('/contactUs.jpg')] bg-cover flex justify-center items-center text-white flex-col gap-4 bg-red-900">
                         <div className='text-4xl font-bold'>
                             Do you have any Question?
                         </div>
@@ -37,14 +25,15 @@ const PortfolioProject = () => {
                             Feel free to contact us anytime.
                         </div>
 
-                        <div className='border border-purple-800 rounded-xl p-4 bg-purple-600'>
+                        <div className='border border-blue-800 rounded-xl p-4 bg-blue-800 hover:bg-red-900'>
+                            <Link href="/contact" >
                             Contact Us
+                            </Link>
                         </div>
                     </div>
-                    <PortfolioContact />
                 </div>
-
             </div>
+            <PortfolioContact />
         </section>
 
 

@@ -1,7 +1,7 @@
 // import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ReactElement } from "react";
 import { BiRotateRight } from "react-icons/bi";
-import { AnimatedAddressIcon, AnimatedEmailIcon, AnimatedPhoneIcon, AnimatedTimeIcon } from "../components/FramerAnimation";
+import AnimatedSettingsIcon, { AnimatedAddressIcon, AnimatedBulb, AnimatedEmailIcon, AnimatedPhoneIcon, AnimatedTimeIcon } from "../components/FramerAnimation";
 
 
 
@@ -79,12 +79,12 @@ export const portfolioExperienceSW: experiencemap[] = [
 
 export const missionVision: experiencemap[] = [
     {
-        icon: <BiRotateRight />,
+        icon: <AnimatedSettingsIcon />,
         title: "Our Mission",
         desc: "To be the clearing and forwarding company of choice in east Africa as well as provide a complete package of logistics services though our global network of partners.",
     },
     {
-        icon: <BiRotateRight />,
+        icon: <AnimatedBulb />,
         title: "Our Vision",
         desc: "To offer a single-source solution to and from any point worldwide keeping our clients informed of their shipment status at every step.",
     },

@@ -17,7 +17,7 @@ const PortfolioExperience = () => {
 
             <div className="flex flex-1  gap-4 p-8 ">
                 <div className='gap-4 mb-8 mt-8 flex flex-col sm:flex-col md:flex-col lg:flex-col'>
-                    <div className='text-lg font-bold text-purple-800'>Features</div>
+                    <div className='text-lg font-bold text-blue-800'>Features</div>
 
                     <div className="text-4xl font-bold text-black">Core Values </div>
 

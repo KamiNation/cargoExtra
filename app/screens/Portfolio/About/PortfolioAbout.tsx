@@ -18,12 +18,16 @@ const PortfolioAbout = () => {
             <PortfolioMap />
 
 
-            <div className='flex text-center p-4 border   border-solid rounded-xl 
-                    bg-purple-600 text-white hover:bg-blue-900  max-w-[130px] max-h-[86px]'>
+<div className="flex items-center justify-center">
+  <div className='flex text-center p-4 border   border-solid rounded-xl 
+                    bg-blue-600 text-white hover:bg-red-600  max-w-[130px] max-h-[86px]'>
 
                 <div className='flex items-center justify-center '>
                     Learn More</div>
             </div>
+</div>
+
+          
         </section>
 
     )

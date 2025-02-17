@@ -2,11 +2,11 @@ import React from 'react'
 import PortfolioContactMap from './PortfolioContactMap'
 import { contactMap } from '@/app/utils/global';
 
-const PortfolioContact: React.FC<contactMap> = ({whatsapp}) => {
+const PortfolioContact: React.FC<contactMap> = ({ whatsapp }) => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section id='contact' className='relative'>
+        <section id='contact' className='bg-blue-900 flex flex-col items-center justify-center'>
             <div className="flex justify-between   mx-auto  sm:flex-wrap md:flex-wrap ">
                 <PortfolioContactMap />
             </div>

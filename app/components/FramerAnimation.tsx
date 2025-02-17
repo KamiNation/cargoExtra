@@ -1,4 +1,4 @@
-
+"use client"
 
 import { motion } from "framer-motion";
 import { FaCog } from "react-icons/fa";
@@ -6,6 +6,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
+
 
 
 const AnimatedSettingsIcon = () => {
@@ -82,3 +84,23 @@ export const AnimatedPhoneIcon = () => {
   );
 };
 
+
+
+export const AnimatedBulb = () => {
+  return (
+    <motion.div
+      initial={{ scale: 1, color: "#ffeb3b" }} // Initial state (yellow)
+      animate={{
+        scale: [1, 1.2, 1],
+        color: ["#ffeb3b", "blue", "#ffeb3b"], // Yellow to white transition
+      }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      <FaLightbulb size={50} />
+    </motion.div>
+  );
+};
