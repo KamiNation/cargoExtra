@@ -1,3 +1,6 @@
+"use client"
+
+
 import PortfolioHero from './Hero/PortfolioHero'
 import PortfolioAbout from './About/PortfolioAbout'
 import PortfolioExperience from './Experience/PortfolioExperience'

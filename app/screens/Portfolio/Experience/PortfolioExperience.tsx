@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { BiSolidArrowFromTop } from 'react-icons/bi'
 import PortfolioExperienceMap from './PortfolioExperienceMap'

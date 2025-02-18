@@ -64,7 +64,7 @@ const Contact = () => {
                 bg-cover bg-center bg-no-repeat 
                 flex text-white font-bold"></section>
 
-            <section id="contact-image" className='w-full h-96 flex gap-6 p-16 '>
+            <section id="contact-image" className='w-full h-96 flex gap-6 p-16 sm:flex-col sm:p-4 '>
                 <div
                     ref={leftImageRef}
                     className="
@@ -72,7 +72,7 @@ const Contact = () => {
                 bg-[url('/lagosAddress.jpg')] 
                 bg-cover bg-center bg-no-repeat 
                 flex flex-1 text-white font-bold border border-solid rounded-lg">
-                    <p className="text-2xl font-bold flex items-center justify-center pl-2"> Suite A2, Sahco Export Shed/Warehouse, Nahco  </p>
+                    <p className="text-2xl font-bold flex items-center justify-center pl-2 sm:text-base"> Suite A2, Sahco Export Shed/Warehouse, Nahco  </p>
                 </div>
 
                 <div
@@ -82,7 +82,7 @@ const Contact = () => {
                 bg-[url('/canadaAddress.jpg')] 
                 bg-cover bg-center bg-no-repeat 
                 flex flex-1 text-white font-bold border border-solid rounded-lg">
-                    <p className="text-2xl font-bold flex items-center justify-center pl-2">
+                    <p className="text-2xl font-bold flex items-center justify-center pl-2 sm:text-base">
                         Unit 162, 1885-1895
                     </p>
                 </div>
@@ -94,14 +94,14 @@ const Contact = () => {
                 <ContactMap />
             </section>
 
-            <section id="contact-map" className='w-full h-screen overflow-hidden pt-4'>
+            <section id="contact-map" className='w-full h-screen overflow-hidden pt-4 sm:mt-[45rem] sm:mb-4'>
                 <div className="text-blue-900 text-2xl text-center font-bold pb-4 pl-12 pr-12" ref={boxRef}>Contact Us</div>
-                <div className='flex pl-12 pr-12 gap-8'>
-                    <div className='flex flex-1'>
+                <div className='flex pl-12 pr-12 gap-8 sm:pl-4 sm:pr-4  sm:flex-col'>
+                <div className='flex flex-1 sm:flex-1'>
                         <OpenLayersMap />
                     </div>
 
-                    <div className='flex flex-1 '>
+                    <div className='flex flex-1 sm:flex-1'>
                         <ContactForm />
                     </div>
                 </div>

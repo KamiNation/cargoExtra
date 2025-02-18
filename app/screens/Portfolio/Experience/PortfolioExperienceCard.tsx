@@ -1,3 +1,5 @@
+"use client"
+
 import { experiencemap } from '@/app/utils/global'
 import Image from 'next/image'
 import React from 'react'

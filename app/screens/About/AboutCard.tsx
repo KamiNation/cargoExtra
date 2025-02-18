@@ -1,3 +1,6 @@
+"use client"
+
+
 import React, { useState } from 'react'
 import { contactmap, experiencemap } from '@/app/utils/global'
 

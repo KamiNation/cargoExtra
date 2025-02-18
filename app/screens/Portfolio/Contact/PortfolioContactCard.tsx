@@ -1,3 +1,6 @@
+"use client"
+
+
 import React, { useState } from 'react'
 import { contactmap } from '@/app/utils/global'
 

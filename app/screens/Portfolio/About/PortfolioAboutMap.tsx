@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { aboutmap, portfolioAboutMap } from '@/app/utils/global'
 import PortfolioAboutCard from './PortfolioAboutCard'

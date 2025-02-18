@@ -1,3 +1,6 @@
+"use client"
+
+
 import { experiencemap } from '@/app/utils/global'
 import React from 'react'
 

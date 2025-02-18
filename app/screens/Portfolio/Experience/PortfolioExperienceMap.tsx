@@ -1,3 +1,6 @@
+"use client"
+
+
 import { experiencemap, portfolioExperienceSW, } from '@/app/utils/global'
 import PortfolioExperienceCard from './PortfolioExperienceCard'
 

@@ -1,3 +1,5 @@
+"use client"
+
 import { contactmap, portfolioContactMap, contactMap } from '@/app/utils/global'
 import React from 'react'
 import PortfolioContactCard from './PortfolioContactCard'

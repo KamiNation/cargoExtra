@@ -1,3 +1,4 @@
+"use client"
 import { missionVision, experiencemap } from '@/app/utils/global'
 import React from 'react'
 import AboutContactCard from './AboutCard'

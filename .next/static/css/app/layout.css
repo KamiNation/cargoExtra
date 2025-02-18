@@ -5559,12 +5559,24 @@ body {
     margin-bottom: 2rem;
   }
 
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .sm\:mt-96 {
     margin-top: 24rem;
   }
 
-  .sm\:mt-4 {
-    margin-top: 1rem;
+  .sm\:mt-\[45rem\] {
+    margin-top: 45rem;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .sm\:flex {
@@ -5579,6 +5591,10 @@ body {
     height: 15rem;
   }
 
+  .sm\:h-\[45rem\] {
+    height: 45rem;
+  }
+
   .sm\:w-\[18rem\] {
     width: 18rem;
   }
@@ -5587,8 +5603,16 @@ body {
     width: 96%;
   }
 
+  .sm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .sm\:flex-wrap {
@@ -5621,6 +5645,14 @@ body {
 
   .sm\:p-4 {
     padding: 1rem;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .sm\:pr-4 {
+    padding-right: 1rem;
   }
 
   .sm\:text-justify {
