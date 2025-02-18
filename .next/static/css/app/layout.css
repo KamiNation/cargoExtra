@@ -1241,9 +1241,6 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-20 {
-  gap: 5rem;
-}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -2276,8 +2273,8 @@ video {
 .text-\[18px\] {
   font-size: 18px;
 }
-.text-\[25px\] {
-  font-size: 25px;
+.text-\[20px\] {
+  font-size: 20px;
 }
 .text-base {
   font-size: 1rem;
@@ -5558,12 +5555,32 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .sm\:mt-96 {
+    margin-top: 24rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-\[15rem\] {
+    height: 15rem;
+  }
+
+  .sm\:w-\[18rem\] {
+    width: 18rem;
+  }
+
+  .sm\:w-\[96\%\] {
+    width: 96%;
   }
 
   .sm\:flex-col {
@@ -5574,16 +5591,41 @@ body {
     flex-wrap: wrap;
   }
 
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
   }
 
   .sm\:p-2\.5 {
     padding: 0.625rem;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:text-justify {
     text-align: justify;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-base {
@@ -5591,17 +5633,23 @@ body {
     line-height: 1.5rem;
   }
 
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 650px) {
-
-  .md\:flex {
-    display: flex;
-  }
 
   .md\:hidden {
     display: none;
@@ -5653,10 +5701,6 @@ body {
 
   .md\:max-w-\[83\.333333\%\] {
     max-width: 83.333333%;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:flex-wrap {
@@ -5767,14 +5811,6 @@ body {
 
   .xl\:w-\[92\%\] {
     width: 92%;
-  }
-
-  .xl\:flex-col {
-    flex-direction: column;
-  }
-
-  .xl\:text-center {
-    text-align: center;
   }
 
   .xl\:text-justify {

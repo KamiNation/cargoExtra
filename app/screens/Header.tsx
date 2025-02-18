@@ -70,7 +70,7 @@ const Header = () => {
                             </Link>
 
                             <Link href={"/"} // Logo link
-                                className={"text-[25px] font-Poppins font-[500] text-blue-900  2xl:hidden  hover:text-red-900 "}
+                                className={"text-[20px] font-Poppins font-[500] text-blue-900  2xl:hidden  hover:text-red-900 "}
                             >
                                 GIDDSFIELD LOGISTICS
 
