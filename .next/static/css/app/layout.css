@@ -5563,6 +5563,10 @@ body {
     margin-top: 24rem;
   }
 
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .sm\:flex {
     display: flex;
   }

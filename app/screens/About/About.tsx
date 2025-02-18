@@ -19,16 +19,16 @@ const About = () => {
         ">
             </section>
 
-            <section id="about-us" className='flex min-h-screen'>
+            <section id="about-us" className='flex min-h-screen '>
 
-                <div className='flex  flex-1 p-12 items-center justify-center'>
+                <div className='flex  flex-1 p-12 items-center justify-center sm:flex-col sm:p-4'>
                     <div className="flex flex-1">
                         <div className='flex flex-1 border border-solid rounded-xl'>
                             <Image src="/aboutPlane.jpg" className=" bg-cover bg-no-repeat w-[100%] h-[100%] border border-solid rounded-xl" alt='about-freigth' width="800" height="800" />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 flex-1 p-8 text-black text-justify">
-                        <div className="font-bold text-3xl text-blue-900">
+                    <div className="flex flex-col gap-4 flex-1 p-8 text-black text-justify sm:p-0">
+                        <div className="font-bold text-3xl text-blue-900 sm:mt-4">
                             About Us
                         </div>
 
@@ -40,7 +40,7 @@ const About = () => {
                             "Our proven ability to minimise time taken to clear goods for our customers puts us on the path to profitability growth, and we are confident it will keep us on that path going forward."
                         </div>
 
-                        <div className="flex flex-col">
+                        <div className="flex flex-col sm:justify-center sm:items-center">
                             <div className="text-2xl text-blue-800 font-bold">
                                 Mr. Gideon
                             </div>
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section id='about-mission' className='flex h-full'>
+            <section id='about-mission' className='flex h-full '>
             <AboutMap />
             </section>
 
