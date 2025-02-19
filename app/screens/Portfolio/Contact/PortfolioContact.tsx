@@ -8,8 +8,8 @@ const PortfolioContact: React.FC<contactMap> = ({ whatsapp }) => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section id='contact' className='bg-blue-900 flex flex-col items-center justify-center'>
-            <div className="flex justify-between   mx-auto  sm:flex-wrap md:flex-wrap ">
+        <section id='contact' className='bg-blue-900 flex flex-col '>
+            <div className="flex ">
                 <PortfolioContactMap />
             </div>
             <div className='flex items-center justify-center gap-2 lg:flex-col pb-4'>

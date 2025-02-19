@@ -13,7 +13,7 @@ const PortfolioAbout = () => {
     }
 
     return (
-        <section id='about-me' className='w-full h-screen mt-16 text-black relative flex flex-col gap-8'>
+        <section id='about-me' className='w-full min-h-screen mt-16 text-black relative flex flex-col gap-8'>
 
             <h1 className="text-center font-bold text-black text-5xl sm:text-lg md:text-lg lg:text-xl xl:text-2xl ">What we do</h1>
 

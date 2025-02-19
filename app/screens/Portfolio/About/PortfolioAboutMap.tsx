@@ -9,7 +9,7 @@ import PortfolioAboutCard from './PortfolioAboutCard'
 const PortfolioMap = () => {
     return (
         <div 
-        className='flex sm:flex-col '
+        className='flex sm:flex-col md:flex-col'
         >
             {
                 portfolioAboutMap.map((about: aboutmap, index) => (

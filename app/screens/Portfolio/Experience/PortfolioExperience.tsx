@@ -12,12 +12,12 @@ const PortfolioExperience = () => {
 
 
     return (
-        <section id='experience' className='w-full min-h-screen  text-black flex sm:flex-col relative p-2.5 sm:mt-96'>
-            <div className="flex flex-1 flex-wrap flex-row gap-10 justify-around mt-4 pl-11 sm:p-0 sm:items-center sm:justify-center" >
+        <section id='experience' className='w-full min-h-screen  text-black flex sm:flex-col md:flex-col relative p-2.5 sm:mt-2'>
+            <div className="flex flex-1 flex-wrap flex-row gap-10 justify-around mt-4 pl-11 sm:p-0 md:p-0 sm:items-center sm:justify-center sm:mt-2" >
                 <Image src={image} alt="Project 1" width={800} height={800} className="w-[100%] h-[100%] sm:w-[96%]" />
             </div>
 
-            <div className="flex flex-1  gap-4 p-8 ">
+            <div className="flex flex-1  gap-4 p-8 sm:p-2 md:p-4">
                 <div className='gap-4 mb-8 mt-8 flex flex-col sm: md: lg:'>
                     <div className='text-lg font-bold text-blue-800'>Features</div>
 

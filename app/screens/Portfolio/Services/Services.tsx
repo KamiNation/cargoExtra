@@ -24,7 +24,7 @@ const Services = () => {
 
             <section id="service-us" className='flex min-h-screen'>
 
-                <div className='flex  flex-1 p-12 items-center justify-center sm:p-2 sm:flex-col'>
+                <div className='flex  flex-1 p-12 items-center justify-center sm:p-2 sm:flex-col md:flex-col md:p-8'>
                     <div className="flex flex-1">
                         <div className='flex flex-1 border border-solid rounded-xl'>
                             <Image src="/contContainer.jpeg" className=" bg-cover bg-no-repeat w-[100%] h-[100%] border border-solid rounded-xl" alt='about-freigth' width="800" height="800" />
@@ -70,16 +70,16 @@ const Services = () => {
                 </div>
             </section>
 
-            <section id="service-catalogue" className="flex h-[28rem] 
+            <section id="service-catalogue" className="flex h-[28rem] md:h-[45rem]
                         bg-[url('/roofie.jpg')] 
                         bg-cover bg-center bg-no-repeat  items-center justify-center sm:mt-40 sm:h-[45rem]">
 
-                <div className='flex gap-8 p-8 flex-1 sm:flex-col '>
+                <div className='flex gap-8 p-8 flex-1 sm:flex-col md:flex-col'>
                     <div className='flex-1 flex items-center justify-center'>
                         <Image src={"/catalogue.jpg"} alt='catalogue' width={800} height={800} className="w-[70%] h-[70%] border rounded-xl border-solid" />
                     </div>
 
-                    <div className='flex flex-1 flex-col p-20 gap-8 sm:p-4'>
+                    <div className='flex flex-1 flex-col p-20 gap-8 sm:p-4 md:p-8'>
                         <div className='uppercase font-bold text-4xl text-blue-900'>
                             catalogue
                         </div>
@@ -98,9 +98,9 @@ const Services = () => {
                 </div>
             </section>
 
-            <section id="service-catalogue" className="flex flex-col min-h-screen p-20 gap-12 sm:p-4 sm:mt-40">
+            <section id="service-catalogue" className="flex flex-col min-h-screen p-20 gap-12 sm:p-4 md:p-8 sm:mt-40">
                 <div className='flex flex-col gap-2'>
-                    <div className='text-4xl text-black font-bold text-center sm:text-base'>
+                    <div className='text-4xl text-black font-bold text-center sm:text-xl'>
                         Explore Our Warehouse Services
                     </div>
                     <div className='text-gray-400  text-center'>
@@ -111,14 +111,14 @@ const Services = () => {
                 <div className='flex flex-col gap-4'>
                     <ServiceWareMap />
 
-                    <div className='flex flex-1 flex-row-reverse p-8'>
+                    <div className='flex flex-1 flex-row-reverse p-8 sm:flex-col md:flex-col'>
 
                         <div className='flex-1 flex items-center justify-center'>
                             <Image src={"/RELABLING.jpg"} alt='relabling' width={800} height={800} className="w-[100%] h-[100%] border rounded-xl border-solid flex-1" />
                         </div>
 
 
-                        <div className='flex flex-1 flex-col gap-12 p-4'>
+                        <div className='flex flex-1 flex-col gap-12 p-4 sm:gap-6'>
                             <div className='uppercase text-4xl text-black font-bold'>
                                 relabling
                             </div>

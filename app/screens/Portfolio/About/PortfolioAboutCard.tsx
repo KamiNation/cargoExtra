@@ -29,7 +29,7 @@ const PortfolioAboutCard: React.FC<aboutmap> = ({ img, title }) => {
 
 
     return (
-        <div className="px-14 gap-4 flex flex-col flex-1 sm:mb-8">
+        <div className="px-14 gap-4 flex flex-col flex-1 sm:mb-8 sm:px-4 md:px-8 md:mb-9">
 
             <div ref={textRef} className='text-center text-xl font-semibold text-blue-900'>{title}</div>
 
