@@ -24,13 +24,13 @@ const Services = () => {
 
             <section id="service-us" className='flex min-h-screen'>
 
-                <div className='flex  flex-1 p-12 items-center justify-center sm:p-2 sm:flex-col md:flex-col md:p-8'>
+                <div className='flex  flex-1 p-12 items-center justify-center sm:p-2 sm:flex-col md:flex-col lg:flex-col xl:flex-col md:p-8 lg:p-8 xl:p-8'>
                     <div className="flex flex-1">
                         <div className='flex flex-1 border border-solid rounded-xl'>
                             <Image src="/contContainer.jpeg" className=" bg-cover bg-no-repeat w-[100%] h-[100%] border border-solid rounded-xl" alt='about-freigth' width="800" height="800" />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2 flex-1 p-8 text-black text-justify">
+                    <div className="flex flex-col gap-2 flex-1 p-8 lg:p-2 xl:p-2 text-black text-justify">
                         <div className="font-bold text-3xl text-blue-900">
 
                             SEA FREIGHT
@@ -98,7 +98,7 @@ const Services = () => {
                 </div>
             </section>
 
-            <section id="service-catalogue" className="flex flex-col min-h-screen p-20 gap-12 sm:p-4 md:p-8 sm:mt-40">
+            <section id="service-catalogue" className="flex flex-col min-h-screen p-20 gap-12 sm:p-4 md:p-8 lg:p-8 xl:p-8 sm:mt-40">
                 <div className='flex flex-col gap-2'>
                     <div className='text-4xl text-black font-bold text-center sm:text-xl'>
                         Explore Our Warehouse Services
@@ -111,7 +111,7 @@ const Services = () => {
                 <div className='flex flex-col gap-4'>
                     <ServiceWareMap />
 
-                    <div className='flex flex-1 flex-row-reverse p-8 sm:flex-col md:flex-col'>
+                    <div className='flex flex-1 flex-row-reverse p-8 sm:flex-col md:flex-col lg:flex-col lg:p-0 xl:p-0'>
 
                         <div className='flex-1 flex items-center justify-center'>
                             <Image src={"/RELABLING.jpg"} alt='relabling' width={800} height={800} className="w-[100%] h-[100%] border rounded-xl border-solid flex-1" />

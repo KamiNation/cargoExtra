@@ -10,7 +10,7 @@ const AboutMap = () => {
         <>
             <div className='
             
-            p-14 flex-1 flex  rounded-[2rem] text-center text-black sm:p-4 md:p-8'>
+            p-14 flex-1 flex  rounded-[2rem] text-center text-black sm:p-4 md:p-8 xl:p-8'>
                 <div className=' flex gap-8 sm:flex-col md:flex-col'>
                     {
                         missionVision.map((project: experiencemap, index) => (
